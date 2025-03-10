@@ -7,7 +7,7 @@
   "env": {
     "MONGO_URI": {
       "description": "MongoDB connection string.",
-      "value": "mongodb+srv://Own:Own@cluster0.aahbv.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+      "value": "REPLACE_WITH_YOUR_SECURE_MONGO_URI"
     },
     "DB_NAME": {
       "description": "MongoDB database name.",
@@ -20,7 +20,7 @@
     "COLLECTION_GOOGLE_AUTH": {
       "description": "MongoDB collection for Google auth.",
       "value": "google_auth"
-      },
+    },
     "FENIX_ABOUT_TYPE": {
       "description": "Set about type",
       "value": "Programming"
@@ -38,17 +38,17 @@
       "value": "Unknown Friend"
     },
     "FENIX_WEL_1": {
-      "description": "contact push message 1",
+      "description": "Contact push message 1",
       "value": "Your Number Has Been Auto Saved🫠"
     },
     "FENIX_WEL_2": {
-      "description": "contact push message 2",
+      "description": "Contact push message 2",
       "value": "Save And Alert Me If Save 🌹"
     },
     "FENIX_WEL_3": {
-      "description": "contact push message 3",
+      "description": "Contact push message 3",
       "value": "Save and Alert me✅"
-     },
+    },
     "BOT_NAME": {
       "description": "Name of the bot",
       "value": "FENX ID OWNER"
@@ -68,7 +68,7 @@
     "RELAX_WISHES": {
       "description": "Relaxation message",
       "value": "Take a deep breath... 🌿"
-     }
+    }
   },
   "buildpacks": [
     {
@@ -78,12 +78,7 @@
   "formation": {
     "web": {
       "quantity": 1,
-      "size": "eco"
+      "size": "free"
     }
-  },
-  "addons": [
-    {
-      "plan": "heroku-postgresql"
-    }
-  ]
+  }
 }
