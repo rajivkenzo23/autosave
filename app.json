@@ -1,7 +1,7 @@
 {
   "name": "DemonSlayer WhatsApp Bot",
   "description": "A WhatsApp bot with VIP features.",
-  "repository": "https://github.com/Fenixid-server/FENIX-A7",
+  "repository": "https://github.com/Fenixid-server/Whatsapp-contact-save-bot",
   "logo": "https://bit.ly/4kfeKbA",
   "keywords": ["whatsapp", "bot", "automation", "vip"],
   "env": {
