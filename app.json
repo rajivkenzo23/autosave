@@ -1,84 +1,89 @@
-{
-  "name": "DemonSlayer WhatsApp Bot",
-  "description": "A WhatsApp bot with VIP features.",
-  "repository": "https://github.com/Fenixid-server/autosave",
-  "logo": "https://bit.ly/4kfeKbA",
-  "keywords": ["whatsapp", "bot", "automation", "vip"],
-  "env": {
-    "MONGO_URI": {
-      "description": "MongoDB connection string.",
-      "value": "REPLACE_WITH_YOUR_SECURE_MONGO_URI"
-    },
-    "DB_NAME": {
-      "description": "MongoDB database name.",
-      "value": "Own"
-    },
-    "COLLECTION_CONTACTS": {
-      "description": "MongoDB collection for contacts.",
-      "value": "contacts"
-    },
-    "COLLECTION_GOOGLE_AUTH": {
-      "description": "MongoDB collection for Google auth.",
-      "value": "google_auth"
-    },
-    "FENIX_ABOUT_TYPE": {
-      "description": "Set about type",
-      "value": "Programming"
-    },
-    "OWNER_NUMBER": {
-      "description": "Owner's phone number",
-      "value": "94773010580"
-    },
-    "USER_TIMEZONE": {
-      "description": "User timezone",
-      "value": "Asia/Colombo"
-    },
-    "FENIX_NAME": {
-      "description": "Name of the unknown save number ",
-      "value": "Unknown Friend"
-    },
-    "FENIX_WEL_1": {
-      "description": "Contact push message 1",
-      "value": "Your Number Has Been Auto Saved🫠"
-    },
-    "FENIX_WEL_2": {
-      "description": "Contact push message 2",
-      "value": "Save And Alert Me If Save 🌹"
-    },
-    "FENIX_WEL_3": {
-      "description": "Contact push message 3",
-      "value": "Save and Alert me✅"
-    },
-    "BOT_NAME": {
-      "description": "Name of the bot",
-      "value": "FENX ID OWNER"
-    },
-    "BOT_AGE": {
-      "description": "Age of the bot",
-      "value": "26"
-    },
-    "BOT_LOCATION": {
-      "description": "Location of the bot",
-      "value": "SRILANKA"
-    },
-    "BOT_EMAIL": {
-      "description": "Email associated with the bot",
-      "value": "privateloginemails@gmail.com"
-    },
-    "RELAX_WISHES": {
-      "description": "Relaxation message",
-      "value": "Take a deep breath... 🌿"
-    }
-  },
-  "buildpacks": [
-    {
-      "url": "heroku/nodejs"
-    }
-  ],
-  "formation": {
-    "eco": {
-      "quantity": 1,
-      "size": "free"
-    }
-  }
-}
+{  
+  "name": "DemonSlayer WhatsApp Bot",  
+  "description": "A WhatsApp bot with VIP features.",  
+  "repository": "https://github.com/Fenixid-server/autosave",  
+  "logo": "https://bit.ly/4kfeKbA",  
+  "keywords": ["whatsapp", "bot", "automation", "vip"],  
+  "env": {  
+    "MONGO_URI": {  
+      "description": "MongoDB connection string.",  
+      "value": "mongodb+srv://Own:Own@cluster0.aahbv.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"  
+    },  
+    "DB_NAME": {  
+      "description": "MongoDB database name.",  
+      "value": "Own"  
+    },  
+    "COLLECTION_CONTACTS": {  
+      "description": "MongoDB collection for contacts.",  
+      "value": "contacts"  
+    },  
+    "COLLECTION_GOOGLE_AUTH": {  
+      "description": "MongoDB collection for Google auth.",  
+      "value": "google_auth"  
+      },  
+    "FENIX_ABOUT_TYPE": {  
+      "description": "Set about type",  
+      "value": "Programming"  
+    },  
+    "OWNER_NUMBER": {  
+      "description": "Owner's phone number",  
+      "value": "94773010580"  
+    },  
+    "USER_TIMEZONE": {  
+      "description": "User timezone",  
+      "value": "Asia/Colombo"  
+    },  
+    "FENIX_NAME": {  
+      "description": "Name of the unknown save number ",  
+      "value": "Unknown Friend"  
+    },  
+    "FENIX_WEL_1": {  
+      "description": "contact push message 1",  
+      "value": "Your Number Has Been Auto Saved🫠"  
+    },  
+    "FENIX_WEL_2": {  
+      "description": "contact push message 2",  
+      "value": "Save And Alert Me If Save 🌹"  
+    },  
+    "FENIX_WEL_3": {  
+      "description": "contact push message 3",  
+      "value": "Save and Alert me✅"  
+     },  
+    "BOT_NAME": {  
+      "description": "Name of the bot",  
+      "value": "FENX ID OWNER"  
+    },  
+    "BOT_AGE": {  
+      "description": "Age of the bot",  
+      "value": "26"  
+    },  
+    "BOT_LOCATION": {  
+      "description": "Location of the bot",  
+      "value": "SRILANKA"  
+    },  
+    "BOT_EMAIL": {  
+      "description": "Email associated with the bot",  
+      "value": "privateloginemails@gmail.com"  
+    },  
+    "RELAX_WISHES": {  
+      "description": "Relaxation message",  
+      "value": "Take a deep breath... 🌿"  
+     }  
+  },  
+  "buildpacks": [  
+    {  
+      "url": "heroku/nodejs"  
+    }  
+  ],  
+  "formation": {  
+    "web": {  
+      "quantity": 1,  
+      "size": "eco"  
+    }  
+  },  
+  "addons": [  
+    {  
+      "plan": "heroku-postgresql"  
+    }  
+  ]  
+}  
