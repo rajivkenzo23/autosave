@@ -6,36 +6,20 @@
   "keywords": ["whatsapp", "bot", "automation", "vip"],
   "env": {
     "MONGO_URI": {
-      "description": "MongoDB connection string. ❌ allowed any ip address if you don't know don't change",
-      "value": "mongodb+srv://Own:Own@cluster0.aahbv.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+      "description": "MongoDB connection string.",
+      "value": "REPLACE_WITH_YOUR_SECURE_MONGO_URI"
     },
     "DB_NAME": {
-      "description": "MongoDB database name. ❌ allowed any ip address don'c change if you not",
+      "description": "MongoDB database name.",
       "value": "Own"
     },
     "COLLECTION_CONTACTS": {
-      "description": "කැමති අංක 4ක් ගහපං/ any 4 numbers",
-      "value": "1234"
+      "description": "MongoDB collection for contacts.",
+      "value": "contacts"
     },
     "COLLECTION_GOOGLE_AUTH": {
-      "description": "වෙනස් කරන්න එප /Don't change",
+      "description": "MongoDB collection for Google auth.",
       "value": "google_auth"
-    },
-    "AUTO_LIKE_STATUS": {
-      "description": "Enable auto-like for status",
-      "value": "true"
-    },
-    "DOWNLOAD_MEDIA_STATUS": {
-      "description": "Enable download media",
-      "value": "true"
-    },
-    "SENSOR_NUMBER": {
-      "description": "Enable sensor number",
-      "value": "true"
-    },
-    "SEND_WELCOME_MESSAGE": {
-      "description": "Send welcome messages",
-      "value": "true"
     },
     "FENIX_ABOUT_TYPE": {
       "description": "Set about type",
@@ -54,24 +38,16 @@
       "value": "Unknown Friend"
     },
     "FENIX_WEL_1": {
-      "description": "contact push message 1",
+      "description": "Contact push message 1",
       "value": "Your Number Has Been Auto Saved🫠"
     },
     "FENIX_WEL_2": {
-      "description": "contact push message 2",
+      "description": "Contact push message 2",
       "value": "Save And Alert Me If Save 🌹"
     },
     "FENIX_WEL_3": {
-      "description": "contact push message 3",
+      "description": "Contact push message 3",
       "value": "Save and Alert me✅"
-    },
-    "AUTO_DETECT_1": {
-      "description": "Status motion push message 1",
-      "value": "heyyy 😸"
-    },
-    "AUTO_DETECT_2": {
-      "description": "Status motion push message 2",
-      "value": "ඔයගෙ නම්බරෙ ගත්තෙ ස්ටෙටස් එකකින් 🫠"
     },
     "BOT_NAME": {
       "description": "Name of the bot",
@@ -92,14 +68,6 @@
     "RELAX_WISHES": {
       "description": "Relaxation message",
       "value": "Take a deep breath... 🌿"
-    },
-    "SEND_TRANSLATIONS": {
-      "description": "Comma-separated list of translations for sending messages",
-      "value": "send,envoyer,enviar,invia,senden,ส่ง,gửi,отправить,إرسال,发送,wysłać,Sent,Send,one,danna,ewnna,ewpm,ewn,එවන්න,ඔනෙ,ඔන,දාන්න,දම්,එවපං,දහම්,එවපන්,දපන්,දාපන්,දාපම්,ඔනා,ඔනේ,එවහන්,One,දෙන්නකො,ewan,dapanko,dapan"
-    },
-    "EMOJIS": {
-      "description": "Comma-separated list of emojis",
-      "value": "🌼,😂,🔥,🤍,🥰,😎,🪻,🎉,👑,🛒,🚀,💎,🌟,🧘‍♀️,🌈"
     }
   },
   "buildpacks": [
@@ -110,12 +78,7 @@
   "formation": {
     "web": {
       "quantity": 1,
-      "size": "eco"
+      "size": "free"
     }
-  },
-  "addons": [
-    {
-      "plan": "heroku-postgresql"
-    }
-  ]
+  }
 }
