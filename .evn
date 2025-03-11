@@ -5,13 +5,13 @@ USER_TIMEZONE=Asia/Colombo
 FENIX_NAME=Unknown Friend
 
 # Welcome Messages
-FENIX_WEL_1=Your Number Has Been Auto Saved🫠
-FENIX_WEL_2=Save And Alert Me If Save 🌹
+FENIX_WEL_1=ඔයාගෙ නම්බර් එක සේව් වෙලා තියෙන්නෙ...🫠
+FENIX_WEL_2=සේව්✅ නම් ` Save`  or ` sv ` කියලා මැසේජ් එකක් දාන්න.නැත්තන් Contact අයින් වෙයි🌹
 FENIX_WEL_3=Save and Alert me✅
 
 # Bot Profile Details
-BOT_NAME=FENX ID OWNER
-BOT_AGE=26
+BOT_NAME=VIXEN ID OWNER
+BOT_AGE=22
 BOT_LOCATION=SRILANKA
 BOT_EMAIL=privateloginemails@gmail.com
 
